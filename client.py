@@ -43,7 +43,7 @@ def getTCPInfo(s):
 if (sys.argv[1] == "help"):
 	print "dest_ip dest_port rate_in_mbps iface"
 	quit()
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.setsockopt(socket.SOL_SOCKET, 25, sys.argv[4]+'\0')
 
 s.connect((sys.argv[1], int(sys.argv[2])))
@@ -52,9 +52,12 @@ startTime = time.time()
 bytesReceived = 0
 while(True):
 	try:
-		data = s.recv(30000)
+		if (time.time() - startTime > 1):
+			startTime = time.time()
+			bytesReceived = 0
+
+		data = s.recv(1470)
 		bytesReceived += len(data)
 		print "rate: ", ((bytesReceived * 8) / (time.time() - startTime))/(1024*1024)
-		print getTCPInfo(s)['rtt']/1000, " ms"
 	except KeyboardInterrupt:
 		break
