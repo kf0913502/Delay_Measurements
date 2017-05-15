@@ -54,9 +54,10 @@ def readLine(sck):
 	return line
 
 
-def handleConnection(sck, addr):
+def handleConnection(sck, addr,data):
 	global terminated
-	rate = float(readLine(sck))
+	print data
+	rate = float(data.split('\n')[0])
 	rate = rate * 1024 * 1024
 	packet = '0'*1470
 	bytesSent = 0
@@ -65,9 +66,8 @@ def handleConnection(sck, addr):
 		try:
 			elapsedTime = time.time() - startTime
 			if (elapsedTime * rate >= bytesSent * 8):
-				sck.send(packet)
+				sck.sendto(packet,addr)
 				bytesSent += 1500
-				print addr, " rtt ", getTCPInfo(sck)['rtt']
 		except KeyboardInterrupt:
 			terminated = True
 			break
@@ -78,9 +78,9 @@ sck.bind(('', 9000))
 
 while not terminated:
 	try:
-		conn, addr = sck.recvfrom(1470)
+		data, addr = sck.recvfrom(1470)
 
-		p2 = threading.Thread(target=handleConnection, args=(conn,addr,))
+		p2 = threading.Thread(target=handleConnection, args=(sck,addr,data,))
 		p2.start()
 	except KeyboardInterrupt:
 		terminated = True
