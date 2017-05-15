@@ -3,6 +3,8 @@ import struct
 import time
 import sys
 
+
+
 def getTCPInfo(s):
 	fmt = "B"*7+"I"*21
 	x = struct.unpack(fmt, s.getsockopt(socket.IPPROTO_TCP, socket.TCP_INFO, 92))
@@ -37,6 +39,10 @@ def getTCPInfo(s):
 
 	return tcpInfo
 
+
+if (sys.argv[1] == "help"):
+	print "dest_ip dest_port rate_in_mbps iface"
+	quit()
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.setsockopt(socket.SOL_SOCKET, 25, sys.argv[4]+'\0')
 
@@ -49,6 +55,6 @@ while(True):
 		data = s.recv(30000)
 		bytesReceived += len(data)
 		print "rate: ", ((bytesReceived * 8) / (time.time() - startTime))/(1024*1024)
-		print getTCPInfo(s)['rtt']
+		print getTCPInfo(s)['rtt']/1000, " ms"
 	except KeyboardInterrupt:
 		break
