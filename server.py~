@@ -58,7 +58,7 @@ def handleConnection(sck, addr):
 	global terminated
 	rate = float(readLine(sck))
 	rate = rate * 1024 * 1024
-	packet = '0'*1470
+	packet = '0'*1440
 	bytesSent = 0
 	startTime = time.time()
 	while not terminated:
