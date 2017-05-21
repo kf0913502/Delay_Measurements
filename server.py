@@ -73,7 +73,7 @@ def handleConnection(sck, addr,data):
 			break
 sck = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sck.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-sck.bind(('', 9000))
+sck.bind(('10.6.42.191', 9000))
 
 
 while not terminated:
