@@ -2,10 +2,9 @@ import socket
 import threading
 import time
 import struct
-
-
+import ntplib
+import sys
 terminated = False
-
 
 
 def getTCPInfo(s):
@@ -57,23 +56,36 @@ def readLine(sck):
 def handleConnection(sck, addr,data):
 	global terminated
 	print data
-	rate = float(data.split('\n')[0])
+	timeAndRate = data.split('\n')[0].split(",")
+	ntpStartTime = long(timeAndRate[0])
+	rate = float(timeAndRate[1])
+	print rate
 	rate = rate * 1024 * 1024
-	packet = '0'*1470
+	
+	
 	bytesSent = 0
 	startTime = time.time()
 	while not terminated:
 		try:
 			elapsedTime = time.time() - startTime
 			if (elapsedTime * rate >= bytesSent * 8):
-				sck.sendto(packet,addr)
+				currentTime = long(ntpStartTime + (time.time() * 1000 - startTime*1000))
+				packet = struct.pack("Q1462s",currentTime,'0'*1462)
+				length = sck.sendto(packet,addr)
+				if (length == 0):
+					print "didnd't send anything"
 				bytesSent += 1500
 		except KeyboardInterrupt:
 			terminated = True
 			break
+
+
+
+
+
 sck = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sck.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-sck.bind(('', 9000))
+sck.bind(('', int(sys.argv[1])))
 
 
 while not terminated:
