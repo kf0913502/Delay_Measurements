@@ -1,12 +1,27 @@
 import matplotlib.pyplot as plt
 import csv
 
-with open('eggs.csv', 'rb') as csvfile:
-        spamreader = csv.reader(csvfile, delimiter=',')
-        for row in spamreader:
-            print ', '.join(row)
+
+files = [('airportFast','airportSlow'),('airportFast2','airportSlow2'),('androidFast','androidSlow'),('blocFast','blocSlow'),('iphoneFast','iphoneSlow'),('iphoneFast2','iphoneSlow2'),('iphoneFast3','iphoneSlow3'),('nokiaApFast','nokiaApSlow'),('nokiaApFast2','nokiaApSlow2'),('nokiaApFast3','nokiaApSlow3'),('TCDwifiFast','TCDwifiSlow'),('tplinkFast','tplinkSlow'), ('monteroseFast','monteroseSlow')]
+
+for f in files:
+	fastFile = open(f[0], 'rb')
+	slowFile = open(f[1],'rb')
+        fastReader = csv.reader(fastFile, delimiter=',')
+        slowReader = csv.reader(slowFile, delimiter=',')
+	slowXValues = list()
+	slowYValues = list()
+	fastXValues = list()
+	fastYValues = list()
+	for row in slowReader:
+		slowXValues.append(row[0])
+		slowYValues.append(row[1])
+	for row in fastReader:
+		fastXValues.append(row[0])
+		fastYValues.append(row[1])
 
 
-plt.plot([1,2,3,4], [1,4,9,16])
-plt.axis([0, 6, 0, 20])
-plt.show()
+	fig, ax = plt.subplots( nrows=1, ncols=1 )  # create figure & 1 axis
+	ax.plot(slowXValues, slowYValues,'r--', fastXValues,fastYValues,'b--')
+	fig.savefig('figures/' + f[0] + '.png')   # save the figure to file
+	plt.close(fig)    # close the figure
