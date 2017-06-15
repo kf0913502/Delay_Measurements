@@ -52,7 +52,7 @@ if (sys.argv[1] == "help"):
 
 
 
-ntpStartTime = long(ntplib.NTPClient().request('europe.pool.ntp.org',version=3).tx_time) * 1000
+ntpStartTime = long(time.time() * 1000) #long(ntplib.NTPClient().request('europe.pool.ntp.org',version=3).tx_time) * 1000
 localStartTime = time.time() * 1000
 
 
