@@ -47,15 +47,19 @@ def getTCPInfo(s):
 
 
 if (sys.argv[1] == "help"):
-	print "dest_ip dest_port rate_in_mbps iface"
+	print "dest_ip dest_port rate_in_mbps iface name"
 	quit()
 
 
 
+<<<<<<< HEAD
+ntpStartTime = long(time.time() * 1000) #long(ntplib.NTPClient().request('europe.pool.ntp.org',version=3).tx_time) * 1000
+=======
 ntpStartTime = long(time.time()*1000)#long(ntplib.NTPClient().request('europe.pool.ntp.org',version=3).tx_time) * 1000
+>>>>>>> 544f0d66977c3fc6e63c76b0b0eee8e62bc9daed
 localStartTime = time.time() * 1000
 
-
+myFile = open(sys.argv[5], 'w',1)
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.setsockopt(socket.SOL_SOCKET, 25, sys.argv[4]+'\0')
@@ -67,12 +71,12 @@ startTime = time.time()
 bytesReceived = 0
 
 nPackets = 0
-totalDelay = 0
+totalDelay = 0 
 while(True):
 	try:
 		if (time.time() - startTime > 1):
-			print "rate: ", ((bytesReceived * 8) / (time.time() - startTime))/(1024*1024)
-			print "delay: ", totalDelay/nPackets
+			rate =  ((bytesReceived * 8) / (time.time() - startTime))/(1024*1024)
+			delay = totalDelay/nPackets
 			startTime = time.time()
 			myFile.write(str(long(startTime)) + "," + str(delay) + "," + str(rate) + "\n")
 			print str(long(startTime)) + "," + str(delay) + "," + str(rate) + "\n"
@@ -83,7 +87,7 @@ while(True):
 		data = s.recv(1470)
 		nPackets+=1
 		currentTime = long(ntpStartTime + (time.time()*1000 - localStartTime))
-		serverTime = long(struct.unpack("Q1462s", data)[0])
+		serverTime= long(struct.unpack("Q1462s", data)[0])
 
 		
 

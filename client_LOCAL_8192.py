@@ -52,7 +52,7 @@ if (sys.argv[1] == "help"):
 
 
 
-ntpStartTime = long(time.time()*1000)#long(ntplib.NTPClient().request('europe.pool.ntp.org',version=3).tx_time) * 1000
+ntpStartTime = long(time.time() * 1000) #long(ntplib.NTPClient().request('europe.pool.ntp.org',version=3).tx_time) * 1000
 localStartTime = time.time() * 1000
 
 
@@ -74,8 +74,6 @@ while(True):
 			print "rate: ", ((bytesReceived * 8) / (time.time() - startTime))/(1024*1024)
 			print "delay: ", totalDelay/nPackets
 			startTime = time.time()
-			myFile.write(str(long(startTime)) + "," + str(delay) + "," + str(rate) + "\n")
-			print str(long(startTime)) + "," + str(delay) + "," + str(rate) + "\n"
 			bytesReceived = 0
 			nPackets = 0
 			totalDelay = 0
