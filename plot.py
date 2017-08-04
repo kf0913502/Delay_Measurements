@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import csv
 
 
-files = [('airportFast','airportSlow'),('airportFast2','airportSlow2'),('androidFast','androidSlow'),('blocFast','blocSlow'),('iphoneFast','iphoneSlow'),('iphoneFast2','iphoneSlow2'),('iphoneFast3','iphoneSlow3'),('nokiaApFast','nokiaApSlow'),('nokiaApFast2','nokiaApSlow2'),('nokiaApFast3','nokiaApSlow3'),('TCDwifiFast','TCDwifiSlow'),('tplinkFast','tplinkSlow'), ('monteroseFast','monteroseSlow')]
+files = [('alublfx_fast_new3','alublfx_slow_new3'), ('bl_localization_fast', 'bl_localization_slow'),  ('blvpn_fast', 'blvpn_slow')]
 
 for f in files:
 	fastFile = open(f[0], 'rb')

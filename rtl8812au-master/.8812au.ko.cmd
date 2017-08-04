@@ -1,1 +1,1 @@
-cmd_/home/kariem/rtl8812au-master/8812au.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/kariem/rtl8812au-master/8812au.ko /home/kariem/rtl8812au-master/8812au.o /home/kariem/rtl8812au-master/8812au.mod.o
+cmd_/home/kariem/Desktop/Delay_Measurements/rtl8812au-master/8812au.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/8812au.ko /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/8812au.o /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/8812au.mod.o

@@ -11,8 +11,8 @@ gatewayIp=`ip route | grep default | grep $wifiOne | awk '{print $3}'`
 
 ip rule add from $wlan0Ip table 1
 ip rule add from $wlan1Ip table 2
-ip route add $wlan0NetworkWithMask dev $wifiOne scope link table 1
-ip route add $wlan1NetworkWithMask dev $wifiTwo scope link table 2
+#ip route add $wlan0NetworkWithMask dev $wifiOne scope link table 1
+#ip route add $wlan1NetworkWithMask dev $wifiTwo scope link table 2
 ip route add default via $gatewayIp dev $wifiOne table 1
 ip route add default via $gatewayIp dev $wifiTwo table 2
 

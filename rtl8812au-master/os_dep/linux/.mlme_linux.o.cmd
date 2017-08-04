@@ -1,14 +1,14 @@
-cmd_/home/kariem/rtl8812au-master/os_dep/linux/mlme_linux.o := gcc -Wp,-MD,/home/kariem/rtl8812au-master/os_dep/linux/.mlme_linux.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/5/include  -I./arch/x86/include -Iarch/x86/include/generated/uapi -Iarch/x86/include/generated  -Iinclude -I./arch/x86/include/uapi -Iarch/x86/include/generated/uapi -I./include/uapi -Iinclude/generated/uapi -include ./include/linux/kconfig.h -Iubuntu/include  -D__KERNEL__ -fno-pie -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-PIE -fno-pie -no-pie -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -funit-at-a-time -maccumulate-outgoing-args -DCONFIG_X86_X32_ABI -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_FXSAVEQ=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_CRC32=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -fno-delete-null-pointer-checks -Wno-maybe-uninitialized -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -DCC_HAVE_ASM_GOTO -O1 -Wno-unused-variable -Wno-unused-value -Wno-unused-label -Wno-unused-parameter -Wno-unused-function -Wno-unused -Wno-uninitialized -I/home/kariem/rtl8812au-master/include -DCONFIG_RTL8812A -DCONFIG_RTL8821A -DCONFIG_MP_INCLUDED -DCONFIG_POWER_SAVING -DCONFIG_LITTLE_ENDIAN  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(mlme_linux)"  -D"KBUILD_MODNAME=KBUILD_STR(8812au)" -c -o /home/kariem/rtl8812au-master/os_dep/linux/.tmp_mlme_linux.o /home/kariem/rtl8812au-master/os_dep/linux/mlme_linux.c
+cmd_/home/kariem/Desktop/Delay_Measurements/rtl8812au-master/os_dep/linux/mlme_linux.o := gcc -Wp,-MD,/home/kariem/Desktop/Delay_Measurements/rtl8812au-master/os_dep/linux/.mlme_linux.o.d  -nostdinc -isystem /usr/lib/gcc/x86_64-linux-gnu/5/include  -I./arch/x86/include -Iarch/x86/include/generated/uapi -Iarch/x86/include/generated  -Iinclude -I./arch/x86/include/uapi -Iarch/x86/include/generated/uapi -I./include/uapi -Iinclude/generated/uapi -include ./include/linux/kconfig.h -Iubuntu/include  -D__KERNEL__ -fno-pie -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -Werror-implicit-function-declaration -Wno-format-security -std=gnu89 -fno-PIE -fno-pie -no-pie -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m64 -falign-jumps=1 -falign-loops=1 -mno-80387 -mno-fp-ret-in-387 -mpreferred-stack-boundary=3 -mskip-rax-setup -mtune=generic -mno-red-zone -mcmodel=kernel -funit-at-a-time -maccumulate-outgoing-args -DCONFIG_X86_X32_ABI -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_FXSAVEQ=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_CRC32=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -pipe -Wno-sign-compare -fno-asynchronous-unwind-tables -fno-delete-null-pointer-checks -Wno-maybe-uninitialized -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fno-var-tracking-assignments -pg -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wno-pointer-sign -fno-strict-overflow -fconserve-stack -Werror=implicit-int -Werror=strict-prototypes -Werror=date-time -DCC_HAVE_ASM_GOTO -O1 -Wno-unused-variable -Wno-unused-value -Wno-unused-label -Wno-unused-parameter -Wno-unused-function -Wno-unused -Wno-uninitialized -I/home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include -DCONFIG_RTL8812A -DCONFIG_RTL8821A -DCONFIG_MP_INCLUDED -DCONFIG_POWER_SAVING -DCONFIG_LITTLE_ENDIAN  -DMODULE  -D"KBUILD_STR(s)=\#s" -D"KBUILD_BASENAME=KBUILD_STR(mlme_linux)"  -D"KBUILD_MODNAME=KBUILD_STR(8812au)" -c -o /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/os_dep/linux/.tmp_mlme_linux.o /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/os_dep/linux/mlme_linux.c
 
-source_/home/kariem/rtl8812au-master/os_dep/linux/mlme_linux.o := /home/kariem/rtl8812au-master/os_dep/linux/mlme_linux.c
+source_/home/kariem/Desktop/Delay_Measurements/rtl8812au-master/os_dep/linux/mlme_linux.o := /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/os_dep/linux/mlme_linux.c
 
-deps_/home/kariem/rtl8812au-master/os_dep/linux/mlme_linux.o := \
+deps_/home/kariem/Desktop/Delay_Measurements/rtl8812au-master/os_dep/linux/mlme_linux.o := \
     $(wildcard include/config/set/scan/deny/timer.h) \
     $(wildcard include/config/ioctl/cfg80211.h) \
     $(wildcard include/config/ap/mode.h) \
     $(wildcard include/config/hostapd/mlme.h) \
     $(wildcard include/config/tcp/csum/offload/tx.h) \
-  /home/kariem/rtl8812au-master/include/drv_types.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/drv_types.h \
     $(wildcard include/config/80211n/ht.h) \
     $(wildcard include/config/80211ac/vht.h) \
     $(wildcard include/config/intel/widi.h) \
@@ -40,7 +40,7 @@ deps_/home/kariem/rtl8812au-master/os_dep/linux/mlme_linux.o := \
     $(wildcard include/config/wfd.h) \
     $(wildcard include/config/autosuspend.h) \
     $(wildcard include/config/concurrent/mode.h) \
-  /home/kariem/rtl8812au-master/include/drv_conf.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/drv_conf.h \
     $(wildcard include/config/android.h) \
     $(wildcard include/config/platform/android.h) \
     $(wildcard include/config/validate/ssid.h) \
@@ -51,7 +51,7 @@ deps_/home/kariem/rtl8812au-master/os_dep/linux/mlme_linux.o := \
     $(wildcard include/config/android/power.h) \
     $(wildcard include/config/wakelock.h) \
     $(wildcard include/config/vendor/req/retry.h) \
-  /home/kariem/rtl8812au-master/include/autoconf.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/autoconf.h \
     $(wildcard include/config/single/img.h) \
     $(wildcard include/config/disable/odm.h) \
     $(wildcard include/config/odm/refresh/ramask.h) \
@@ -132,7 +132,7 @@ deps_/home/kariem/rtl8812au-master/os_dep/linux/mlme_linux.o := \
     $(wildcard include/config/error/detect.h) \
     $(wildcard include/config/error/detect/int.h) \
     $(wildcard include/config/error/reset.h) \
-  /home/kariem/rtl8812au-master/include/basic_types.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/basic_types.h \
   include/linux/types.h \
     $(wildcard include/config/have/uid16.h) \
     $(wildcard include/config/uid16.h) \
@@ -168,10 +168,10 @@ deps_/home/kariem/rtl8812au-master/os_dep/linux/mlme_linux.o := \
     $(wildcard include/config/x86/32.h) \
   arch/x86/include/uapi/asm/posix_types_64.h \
   include/uapi/asm-generic/posix_types.h \
-  /home/kariem/rtl8812au-master/include/osdep_service.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/osdep_service.h \
     $(wildcard include/config/use/vmalloc.h) \
     $(wildcard include/config/wowlan.h) \
-  /home/kariem/rtl8812au-master/include/osdep_service_linux.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/osdep_service_linux.h \
     $(wildcard include/config/efuse/config/file.h) \
     $(wildcard include/config/file.h) \
     $(wildcard include/config/usb/suspend.h) \
@@ -1279,13 +1279,13 @@ deps_/home/kariem/rtl8812au-master/os_dep/linux/mlme_linux.o := \
     $(wildcard include/config/att/wakeup.h) \
     $(wildcard include/config/att/battery.h) \
   include/linux/pm_runtime.h \
-  /home/kariem/rtl8812au-master/include/rtw_byteorder.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_byteorder.h \
     $(wildcard include/config/little/endian.h) \
     $(wildcard include/config/big/endian.h) \
     $(wildcard include/config/platform/mstar389.h) \
-  /home/kariem/rtl8812au-master/include/byteorder/little_endian.h \
-  /home/kariem/rtl8812au-master/include/wlan_bssdef.h \
-  /home/kariem/rtl8812au-master/include/wifi.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/byteorder/little_endian.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/wlan_bssdef.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/wifi.h \
     $(wildcard include/config/rtl8712fw.h) \
     $(wildcard include/config/error.h) \
     $(wildcard include/config/method/flash.h) \
@@ -1301,13 +1301,13 @@ deps_/home/kariem/rtl8812au-master/os_dep/linux/mlme_linux.o := \
     $(wildcard include/config/method/ppbc.h) \
     $(wildcard include/config/method/vdisplay.h) \
     $(wildcard include/config/method/pdisplay.h) \
-  /home/kariem/rtl8812au-master/include/ieee80211.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/ieee80211.h \
     $(wildcard include/config/rtl8711fw.h) \
-  /home/kariem/rtl8812au-master/include/drv_types_linux.h \
-  /home/kariem/rtl8812au-master/include/rtw_debug.h \
-  /home/kariem/rtl8812au-master/include/rtw_ht.h \
-  /home/kariem/rtl8812au-master/include/rtw_vht.h \
-  /home/kariem/rtl8812au-master/include/rtw_rf.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/drv_types_linux.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_debug.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_ht.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_vht.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_rf.h \
     $(wildcard include/config/.h) \
     $(wildcard include/config/1t.h) \
     $(wildcard include/config/2t.h) \
@@ -1315,12 +1315,12 @@ deps_/home/kariem/rtl8812au-master/os_dep/linux/mlme_linux.o := \
     $(wildcard include/config/2r.h) \
     $(wildcard include/config/1t2r.h) \
     $(wildcard include/config/turbo.h) \
-  /home/kariem/rtl8812au-master/include/rtw_cmd.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_cmd.h \
     $(wildcard include/config/event/thread/mode.h) \
     $(wildcard include/config/c2h/wk.h) \
-  /home/kariem/rtl8812au-master/include/cmd_osdep.h \
-  /home/kariem/rtl8812au-master/include/rtw_security.h \
-  /home/kariem/rtl8812au-master/include/rtw_xmit.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/cmd_osdep.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_security.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_xmit.h \
     $(wildcard include/config/tx/aggregation.h) \
     $(wildcard include/config/platform/mstar/titania12.h) \
     $(wildcard include/config/single/xmit/buf.h) \
@@ -1329,65 +1329,65 @@ deps_/home/kariem/rtl8812au-master/os_dep/linux/mlme_linux.o := \
     $(wildcard include/config/rtl8192d.h) \
     $(wildcard include/config/xmit/ack.h) \
     $(wildcard include/config/sdio/tx/tasklet.h) \
-  /home/kariem/rtl8812au-master/include/xmit_osdep.h \
-  /home/kariem/rtl8812au-master/include/rtw_recv.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/xmit_osdep.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_recv.h \
     $(wildcard include/config/single/recv/buf.h) \
     $(wildcard include/config/recv/thread/mode.h) \
     $(wildcard include/config/rx/indicate/queue.h) \
     $(wildcard include/config/bsd/rx/use/mbuf.h) \
-  /home/kariem/rtl8812au-master/include/recv_osdep.h \
-  /home/kariem/rtl8812au-master/include/rtw_efuse.h \
-  /home/kariem/rtl8812au-master/include/rtw_sreset.h \
-  /home/kariem/rtl8812au-master/include/hal_intf.h \
-  /home/kariem/rtl8812au-master/include/hal_com.h \
-  /home/kariem/rtl8812au-master/include/HalVerDef.h \
-  /home/kariem/rtl8812au-master/include/hal_pg.h \
-  /home/kariem/rtl8812au-master/include/hal_phy.h \
-  /home/kariem/rtl8812au-master/include/hal_phy_reg.h \
-  /home/kariem/rtl8812au-master/include/hal_com_reg.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/recv_osdep.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_efuse.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_sreset.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/hal_intf.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/hal_com.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/HalVerDef.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/hal_pg.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/hal_phy.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/hal_phy_reg.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/hal_com_reg.h \
     $(wildcard include/config/usedk.h) \
     $(wildcard include/config/no/usedk.h) \
-  /home/kariem/rtl8812au-master/include/hal_com_phycfg.h \
-  /home/kariem/rtl8812au-master/include/hal_com_led.h \
-  /home/kariem/rtl8812au-master/include/rtw_qos.h \
-  /home/kariem/rtl8812au-master/include/rtw_pwrctrl.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/hal_com_phycfg.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/hal_com_led.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_qos.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_pwrctrl.h \
     $(wildcard include/config/lps/rpwm/timer.h) \
-  /home/kariem/rtl8812au-master/include/rtw_mlme.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_mlme.h \
     $(wildcard include/config/ftp/protect.h) \
-  /home/kariem/rtl8812au-master/include/mlme_osdep.h \
-  /home/kariem/rtl8812au-master/include/rtw_io.h \
-  /home/kariem/rtl8812au-master/include/rtw_ioctl.h \
-  /home/kariem/rtl8812au-master/include/rtw_ioctl_set.h \
-  /home/kariem/rtl8812au-master/include/rtw_ioctl_query.h \
-  /home/kariem/rtl8812au-master/include/rtw_ioctl_rtl.h \
-  /home/kariem/rtl8812au-master/include/osdep_intf.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/mlme_osdep.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_io.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_ioctl.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_ioctl_set.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_ioctl_query.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_ioctl_rtl.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/osdep_intf.h \
     $(wildcard include/config/r871x/test.h) \
-  /home/kariem/rtl8812au-master/include/rtw_eeprom.h \
-  /home/kariem/rtl8812au-master/include/sta_info.h \
-  /home/kariem/rtl8812au-master/include/rtw_event.h \
-  /home/kariem/rtl8812au-master/include/rtw_mlme_ext.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_eeprom.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/sta_info.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_event.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_mlme_ext.h \
     $(wildcard include/config/sta/mode/scan/under/ap/mode.h) \
     $(wildcard include/config/active/keep/alive/check.h) \
-  /home/kariem/rtl8812au-master/include/rtw_ap.h \
-  /home/kariem/rtl8812au-master/include/rtw_version.h \
-  /home/kariem/rtl8812au-master/include/rtw_p2p.h \
-  /home/kariem/rtl8812au-master/include/rtw_mp.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_ap.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_version.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_p2p.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_mp.h \
     $(wildcard include/config/rtl8192c.h) \
     $(wildcard include/config/rtl8723a.h) \
     $(wildcard include/config/rtl8188e.h) \
     $(wildcard include/config/txt.h) \
-  /home/kariem/rtl8812au-master/include/rtw_br_ext.h \
-  /home/kariem/rtl8812au-master/include/ip.h \
-  /home/kariem/rtl8812au-master/include/if_ether.h \
-  /home/kariem/rtl8812au-master/include/ethernet.h \
-  /home/kariem/rtl8812au-master/include/circ_buf.h \
-  /home/kariem/rtl8812au-master/include/rtw_android.h \
-  /home/kariem/rtl8812au-master/include/usb_osintf.h \
-  /home/kariem/rtl8812au-master/include/usb_vendor_req.h \
-  /home/kariem/rtl8812au-master/include/usb_ops.h \
-  /home/kariem/rtl8812au-master/include/usb_ops_linux.h \
-  /home/kariem/rtl8812au-master/include/usb_hal.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_br_ext.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/ip.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/if_ether.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/ethernet.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/circ_buf.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/rtw_android.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/usb_osintf.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/usb_vendor_req.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/usb_ops.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/usb_ops_linux.h \
+  /home/kariem/Desktop/Delay_Measurements/rtl8812au-master/include/usb_hal.h \
 
-/home/kariem/rtl8812au-master/os_dep/linux/mlme_linux.o: $(deps_/home/kariem/rtl8812au-master/os_dep/linux/mlme_linux.o)
+/home/kariem/Desktop/Delay_Measurements/rtl8812au-master/os_dep/linux/mlme_linux.o: $(deps_/home/kariem/Desktop/Delay_Measurements/rtl8812au-master/os_dep/linux/mlme_linux.o)
 
-$(deps_/home/kariem/rtl8812au-master/os_dep/linux/mlme_linux.o):
+$(deps_/home/kariem/Desktop/Delay_Measurements/rtl8812au-master/os_dep/linux/mlme_linux.o):
